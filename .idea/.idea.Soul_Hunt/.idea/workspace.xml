@@ -12,16 +12,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="" />
+    <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterCharacter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Soul_Hunt.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Soul_Hunt.uproject" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2xV4xLB78TWmyktnvnVH4aMm9OG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,6 +41,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,7 +152,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -153,6 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748010152119</updated>
       <workItem from="1748010153483" duration="411000" />
+      <workItem from="1748299812376" duration="1263000" />
     </task>
     <servers />
   </component>
