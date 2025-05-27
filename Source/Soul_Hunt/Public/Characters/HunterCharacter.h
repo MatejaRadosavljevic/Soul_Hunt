@@ -6,6 +6,9 @@
 #include "GameFramework/Character.h"
 #include "HunterCharacter.generated.h"
 
+class USpringArmComponent;
+class UCameraComponent;
+
 UCLASS()
 class SOUL_HUNT_API AHunterCharacter : public ACharacter
 {
@@ -21,9 +24,25 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-	
+		// Called when the game starts or when spawned
+    	virtual void BeginPlay() override;
 
+		void MoveForward(float Value);
+
+		void MoveRight(float Value);
+	
+		void Turn(float Value);
+	
+		void LookUp(float Value);
+
+		void Jump(float Value);
+
+private:
+
+	UPROPERTY(VisibleAnywhere)
+	USpringArmComponent* SpringArm;
+	
+	UPROPERTY(VisibleAnywhere)
+	UCameraComponent* ViewCamera; 
 
 };
