@@ -5,6 +5,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Chaos/SoftsSpring.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 AHunterCharacter::AHunterCharacter()
@@ -15,6 +16,10 @@ AHunterCharacter::AHunterCharacter()
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
+
+
+	GetCharacterMovement()->bOrientRotationToMovement=true;
+	GetCharacterMovement()->RotationRate= FRotator(0.0f,400.f,0.0f);
 	
 	SpringArm= CreateDefaultSubobject<USpringArmComponent>("CameraBoom");
 	SpringArm->SetupAttachment(GetRootComponent());
@@ -55,8 +60,17 @@ void AHunterCharacter::MoveForward(float Value)
 {
 	if (Controller && (Value!=0.f))
 	{
-		FVector Forward= GetActorForwardVector();
-		AddMovementInput(Forward, Value);
+		/*FVector Forward= GetActorForwardVector();
+		AddMovementInput(Forward, Value);*/
+
+		//find out which way is forward
+
+		const FRotator ControlRotation= GetControlRotation();
+		const FRotator YawRotation(0.f,ControlRotation.Yaw,0.f);
+
+		const FVector Direction= FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		AddMovementInput(Direction,Value);
+		
 	}
 }
 
@@ -64,8 +78,15 @@ void AHunterCharacter::MoveRight(float Value)
 {
 	if (Controller && (Value!=0.f))
 	{
-		FVector Right= GetActorRightVector();
-		AddMovementInput(Right, Value);
+		/*FVector Right= GetActorRightVector();
+		AddMovementInput(Right, Value);*/
+
+		//find out which way is right
+		const FRotator ControlRotation= GetControlRotation();
+		const FRotator YawRotation(0.f,ControlRotation.Yaw,0.f);
+
+		const FVector Direction= FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+		AddMovementInput(Direction,Value);
 	}
 }
 
