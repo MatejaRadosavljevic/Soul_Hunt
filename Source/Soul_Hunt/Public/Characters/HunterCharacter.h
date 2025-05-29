@@ -8,6 +8,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
+class UGroomComponent;
 
 UCLASS()
 class SOUL_HUNT_API AHunterCharacter : public ACharacter
@@ -43,6 +44,12 @@ private:
 	USpringArmComponent* SpringArm;
 	
 	UPROPERTY(VisibleAnywhere)
-	UCameraComponent* ViewCamera; 
+	UCameraComponent* ViewCamera;
+
+	UPROPERTY(VisibleAnywhere, Category = Hair)
+	UGroomComponent* Hair;
+	
+	UPROPERTY(VisibleAnywhere, Category = Hair)
+	UGroomComponent* Eyebrows;
 
 };

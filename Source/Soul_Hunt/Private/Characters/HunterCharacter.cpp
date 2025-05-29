@@ -6,6 +6,7 @@
 #include "Camera/CameraComponent.h"
 #include "Chaos/SoftsSpring.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include"GroomComponent.h"
 
 // Sets default values
 AHunterCharacter::AHunterCharacter()
@@ -28,6 +29,16 @@ AHunterCharacter::AHunterCharacter()
 	
 	ViewCamera = CreateDefaultSubobject<UCameraComponent>("ViewCamera");
 	ViewCamera->SetupAttachment(SpringArm);
+
+
+	Hair= CreateDefaultSubobject<UGroomComponent>("Hair");
+	Hair-> SetupAttachment(GetMesh());
+	Hair-> AttachmentName= FString("head");
+
+
+	Eyebrows= CreateDefaultSubobject<UGroomComponent>("Eyebrows");
+	Eyebrows-> SetupAttachment(GetMesh());
+	Eyebrows-> AttachmentName= FString("head");
 }
 
 // Called when the game starts or when spawned
