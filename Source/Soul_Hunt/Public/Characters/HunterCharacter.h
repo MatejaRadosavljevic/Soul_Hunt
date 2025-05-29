@@ -9,6 +9,7 @@
 class USpringArmComponent;
 class UCameraComponent;
 class UGroomComponent;
+class UInputAction;
 
 UCLASS()
 class SOUL_HUNT_API AHunterCharacter : public ACharacter
@@ -38,6 +39,13 @@ protected:
 
 		void Jump(float Value);
 
+	/**Called for running input*/
+	UFUNCTION()
+	void StartRunning();
+
+	UFUNCTION()
+	void StopRunning();
+
 private:
 
 	UPROPERTY(VisibleAnywhere)
@@ -51,5 +59,19 @@ private:
 	
 	UPROPERTY(VisibleAnywhere, Category = Hair)
 	UGroomComponent* Eyebrows;
+
+
+	/** Running Input Action*/
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+	float RunSpeed = 700.0f;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+	float WalkSpeed = 400.0f;
+
+	bool bIsRunning = false;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* JumpAction;
 
 };

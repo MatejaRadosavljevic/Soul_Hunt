@@ -14,12 +14,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/BP_HunterCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/BP_HunterCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +181,8 @@
       <workItem from="1748462539238" duration="4769000" />
       <workItem from="1748513739569" duration="232000" />
       <workItem from="1748514566793" duration="120000" />
-      <workItem from="1748514813129" duration="1878000" />
+      <workItem from="1748514813129" duration="2061000" />
+      <workItem from="1748549284660" duration="2388000" />
     </task>
     <servers />
   </component>

@@ -25,7 +25,15 @@ AHunterCharacter::AHunterCharacter()
 	SpringArm= CreateDefaultSubobject<USpringArmComponent>("CameraBoom");
 	SpringArm->SetupAttachment(GetRootComponent());
 	SpringArm-> TargetArmLength = 300.f;
+
+	
 	JumpMaxHoldTime = 0.2f;
+	GetCharacterMovement()->JumpZVelocity = 420.f;
+	GetCharacterMovement()->AirControl = 0.35f;
+	//GetCharacterMovement()->MaxWalkSpeed = 300.f;
+	GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
+	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
+	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 	
 	ViewCamera = CreateDefaultSubobject<UCameraComponent>("ViewCamera");
 	ViewCamera->SetupAttachment(SpringArm);
@@ -65,6 +73,8 @@ void AHunterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis(FName("Turn"),this,&AHunterCharacter::Turn);
 	PlayerInputComponent->BindAxis(FName("LookUp"),this,&AHunterCharacter::LookUp);
 	PlayerInputComponent->BindAxis(FName("Jump"),this,&AHunterCharacter::Jump);
+	PlayerInputComponent->BindAction("Run",IE_Pressed,this,&AHunterCharacter::StartRunning);
+	PlayerInputComponent->BindAction("Run",IE_Released,this,&AHunterCharacter::StopRunning);
 }
 
 void AHunterCharacter::MoveForward(float Value)
@@ -114,6 +124,18 @@ void AHunterCharacter::LookUp(float Value)
 void AHunterCharacter::Jump(float Value)
 {
 	
+}
+
+void AHunterCharacter::StartRunning()
+{
+	bIsRunning=true;
+	GetCharacterMovement()->MaxWalkSpeed=RunSpeed;
+}
+
+void AHunterCharacter::StopRunning()
+{
+	bIsRunning=false;
+	GetCharacterMovement()->MaxWalkSpeed=WalkSpeed;
 }
 
 
