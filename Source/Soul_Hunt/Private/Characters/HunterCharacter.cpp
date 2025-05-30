@@ -27,7 +27,7 @@ AHunterCharacter::AHunterCharacter()
 	SpringArm-> TargetArmLength = 300.f;
 
 	
-	JumpMaxHoldTime = 0.2f;
+	//JumpMaxHoldTime = 0.2f;
 	GetCharacterMovement()->JumpZVelocity = 420.f;
 	GetCharacterMovement()->AirControl = 0.35f;
 	//GetCharacterMovement()->MaxWalkSpeed = 300.f;
@@ -72,7 +72,8 @@ void AHunterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis(FName("MoveRight"),this,&AHunterCharacter::MoveRight);
 	PlayerInputComponent->BindAxis(FName("Turn"),this,&AHunterCharacter::Turn);
 	PlayerInputComponent->BindAxis(FName("LookUp"),this,&AHunterCharacter::LookUp);
-	PlayerInputComponent->BindAxis(FName("Jump"),this,&AHunterCharacter::Jump);
+	
+	PlayerInputComponent->BindAction(FName("Jump"),IE_Pressed,this,&ACharacter::Jump);
 	PlayerInputComponent->BindAction("Run",IE_Pressed,this,&AHunterCharacter::StartRunning);
 	PlayerInputComponent->BindAction("Run",IE_Released,this,&AHunterCharacter::StopRunning);
 }
@@ -121,10 +122,10 @@ void AHunterCharacter::LookUp(float Value)
 	AddControllerPitchInput(Value);
 }
 
-void AHunterCharacter::Jump(float Value)
+/*void AHunterCharacter::Jump(float Value)
 {
 	
-}
+}*/
 
 void AHunterCharacter::StartRunning()
 {

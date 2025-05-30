@@ -37,7 +37,7 @@ protected:
 	
 		void LookUp(float Value);
 
-		void Jump(float Value);
+		//void Jump(float Value);
 
 	/**Called for running input*/
 	UFUNCTION()
@@ -71,7 +71,7 @@ private:
 	bool bIsRunning = false;
 
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-	UInputAction* JumpAction;
+	/*UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* JumpAction;*/
 
 };
