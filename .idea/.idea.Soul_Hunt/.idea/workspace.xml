@@ -14,11 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/ABP_Echo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/ABP_Echo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/BP_HunterCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/BP_HunterCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +181,7 @@
       <workItem from="1748514813129" duration="2061000" />
       <workItem from="1748549284660" duration="3022000" />
       <workItem from="1748607036040" duration="1046000" />
-      <workItem from="1748609638281" duration="4185000" />
+      <workItem from="1748609638281" duration="7160000" />
     </task>
     <servers />
   </component>
