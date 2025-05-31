@@ -14,6 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterAnimInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,11 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -47,7 +54,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;testing&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -181,7 +188,8 @@
       <workItem from="1748514813129" duration="2061000" />
       <workItem from="1748549284660" duration="3022000" />
       <workItem from="1748607036040" duration="1046000" />
-      <workItem from="1748609638281" duration="7160000" />
+      <workItem from="1748609638281" duration="7761000" />
+      <workItem from="1748639732056" duration="1539000" />
     </task>
     <servers />
   </component>
