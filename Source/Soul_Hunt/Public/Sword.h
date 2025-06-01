@@ -8,9 +8,21 @@
 
 
 class UBoxComponent;
+class USphereComponent;
 class UStaticMeshComponent;
 class USceneComponent;
+//class USoundBase;
 class UGeometryCollectionComponent;
+
+
+UENUM(BlueprintType)
+enum class EItemState : uint8
+{
+	EIS_Hovering    UMETA(DisplayName = "Hovering"),
+	EIS_Equipped    UMETA(DisplayName = "Equipped"),
+	EIS_Max         UMETA(DisplayName = "DefaultMAX")
+};
+
 
 UCLASS()
 class SOUL_HUNT_API ASword : public AActor
@@ -22,16 +34,31 @@ public:
 	ASword();
 	
 	virtual void Tick(float DeltaTime) override;
+
+	void Equip(USceneComponent* InParent, FName InSocketName, AActor* NewOwner, APawn* NewInstigator);
+	//void DeactivateEmbers();
+	void DisableSphereCollision();
+	//void PlayEquipSound();
+	void AttachMeshToSocket(USceneComponent* InParent, const FName& InSocketName);
+
+	
 	
 protected:
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Item State")
+	EItemState ItemState;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UStaticMeshComponent* SwordMesh;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UBoxComponent* WeaponBox;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	USphereComponent* Sphere;
 
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* BoxTraceStart;
@@ -47,8 +74,7 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float Damage = 20.f;
-	UPROPERTY()
-	TArray<AActor*> IgnoreActors;
+		TArray<AActor*> IgnoreActors;
 
 	UFUNCTION()
 	void OnBoxOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,

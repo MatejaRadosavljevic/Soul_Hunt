@@ -2,9 +2,12 @@
 
 
 #include "Sword.h"
-#include "Components/BoxComponent.h"
+#include "Characters/HunterCharacter.h"
 #include "Kismet/GameplayStatics.h"
+#include "Components/BoxComponent.h"
+#include "Components/SphereComponent.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "Interfaces/HitInterface.h"
 #include "GeometryCollection/GeometryCollectionComponent.h"
   
 
@@ -13,21 +16,27 @@ ASword::ASword()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
-	SwordMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SwordMesh"));
-	RootComponent = SwordMesh;
-
-	WeaponBox = CreateDefaultSubobject<UBoxComponent>(TEXT("WeaponBox"));
-	WeaponBox->SetupAttachment(GetRootComponent());
+	SwordMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Sword Mesh"));
+	SetRootComponent(SwordMesh); 
+	WeaponBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Weapon Box"));
+	WeaponBox->SetupAttachment(SwordMesh);
 	WeaponBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	WeaponBox->SetCollisionResponseToAllChannels(ECR_Overlap);
-	WeaponBox->SetCollisionResponseToChannel(ECC_Pawn, ECR_Ignore);
+	WeaponBox->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
+	WeaponBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
 
-	BoxTraceStart = CreateDefaultSubobject<USceneComponent>(TEXT("BoxTraceStart"));
-	BoxTraceStart->SetupAttachment(GetRootComponent());
+	BoxTraceStart = CreateDefaultSubobject<USceneComponent>(TEXT("Box Trace Start"));
+	BoxTraceStart->SetupAttachment(SwordMesh);
 
-	BoxTraceEnd = CreateDefaultSubobject<USceneComponent>(TEXT("BoxTraceEnd"));
-	BoxTraceEnd->SetupAttachment(GetRootComponent());
+	BoxTraceEnd = CreateDefaultSubobject<USceneComponent>(TEXT("Box Trace End"));
+	BoxTraceEnd->SetupAttachment(SwordMesh);
+
+
+	Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
+	Sphere->SetupAttachment(SwordMesh); 
+	Sphere->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+
+	
+	ItemState = EItemState::EIS_Hovering;
 }
 
 
@@ -101,5 +110,36 @@ void ASword::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ASword::Equip(USceneComponent* InParent, FName InSocketName, AActor* NewOwner, APawn* NewInstigator)
+{
+	if (!InParent)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Equip failed: InParent is null."));
+		return;
+	}
+	UE_LOG(LogTemp, Warning, TEXT("Attaching to socket: %s"), *InSocketName.ToString());
+	ItemState = EItemState::EIS_Equipped;
+	SetOwner(NewOwner);
+	SetInstigator(NewInstigator);
+	AttachMeshToSocket(InParent, InSocketName);
+	DisableSphereCollision();
+	
+}
+
+
+void ASword::DisableSphereCollision()
+{
+	if (Sphere)
+	{
+		Sphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	}
+}
+
+void ASword::AttachMeshToSocket(USceneComponent* InParent, const FName& InSocketName)
+{
+	FAttachmentTransformRules TransformRules(EAttachmentRule::SnapToTarget, true);
+	SwordMesh->AttachToComponent(InParent, TransformRules, InSocketName);
 }
 

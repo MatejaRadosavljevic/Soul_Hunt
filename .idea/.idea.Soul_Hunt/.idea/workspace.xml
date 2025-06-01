@@ -13,28 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Items/BP_Weapon.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Character/Sound/SFX_Step.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Character/Sound/StoneStep3.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Character/Sound/StoneStep4.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Fab/Steel_Sword/steel_sword.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Fab/Steel_Sword/steel_sword1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Fab/Steel_Sword/steel_sword_texture_0.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Fab/Steel_Sword/steel_sword_texture_1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Fab/Steel_Sword/steel_sword_texture_2.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Sword.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Sword.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AncientContent/Characters/Echo/Meshes/Echo_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AncientContent/Characters/Echo/Meshes/Echo_Skeleton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/FieldSystem/BP_FieldSystem.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/FieldSystem/BP_FieldSystem.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_Hunter_GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_Hunter_GameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Destructibiles/GC_Cube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Destructibiles/GC_Cube.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Items/MySword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Items/MySword.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonGreystone/Characters/Heroes/Greystone/GreystonePlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonGreystone/Characters/Heroes/Greystone/GreystonePlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Sound/SFX_Step.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Sound/StoneStep3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Sound/StoneStep4.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Sword.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Sword.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Sword.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Sword.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,9 +38,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterAnimInstance.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/InterFaces/HitInterface.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterAnimInstance.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/InterFaces/HitInterface.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -213,6 +198,8 @@
       <workItem from="1748723525876" duration="722000" />
       <workItem from="1748786095796" duration="1342000" />
       <workItem from="1748788775725" duration="4435000" />
+      <workItem from="1748806831872" duration="3184000" />
+      <workItem from="1748810430239" duration="1906000" />
     </task>
     <servers />
   </component>
