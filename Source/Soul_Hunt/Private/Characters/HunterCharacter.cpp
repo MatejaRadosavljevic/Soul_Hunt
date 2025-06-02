@@ -141,6 +141,12 @@ void AHunterCharacter::StopRunning()
 	GetCharacterMovement()->MaxWalkSpeed=WalkSpeed;
 }
 
+void AHunterCharacter::SetCharacterState(ECharacterState NewState)
+{
+	CharacterState = NewState;
+
+}
+
 
 
 

@@ -52,7 +52,7 @@ protected:
 	void StopRunning();
 
 private:
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character State", meta = (AllowPrivateAccess = "true"))
 	ECharacterState CharacterState=ECharacterState::ECS_Unequipped;
 	
 	UPROPERTY(VisibleAnywhere)
@@ -67,6 +67,8 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = Hair)
 	UGroomComponent* Eyebrows;
 
+	UFUNCTION(BlueprintCallable)
+	void SetCharacterState(ECharacterState NewState);
 
 	/** Running Input Action*/
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
@@ -83,4 +85,6 @@ private:
 
 	public:
 	FORCEINLINE ECharacterState GetCharacterState() const { return CharacterState; }
+
+	
 };
