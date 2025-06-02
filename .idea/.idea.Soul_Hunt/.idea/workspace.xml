@@ -14,12 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Items/MySword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Items/MySword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Minimal_Default.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Items/BP_Weapon2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Items/BP_Weapon2.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Sword.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Private/Sword.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Sword.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Public/Sword.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Soul_Hunt/Soul_Hunt.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +36,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterAnimInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/InterFaces/HitInterface.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/InterFaces/PickupInterface.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/Items/Item.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterAnimInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/InterFaces/HitInterface.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/InterFaces/PickupInterface.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/Items/Item.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -200,6 +200,9 @@
       <workItem from="1748788775725" duration="4435000" />
       <workItem from="1748806831872" duration="3184000" />
       <workItem from="1748810430239" duration="1906000" />
+      <workItem from="1748878394923" duration="848000" />
+      <workItem from="1748887546521" duration="2640000" />
+      <workItem from="1748893619461" duration="1287000" />
     </task>
     <servers />
   </component>
