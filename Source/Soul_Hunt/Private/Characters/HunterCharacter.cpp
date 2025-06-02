@@ -76,6 +76,7 @@ void AHunterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction(FName("Jump"),IE_Pressed,this,&ACharacter::Jump);
 	PlayerInputComponent->BindAction("Run",IE_Pressed,this,&AHunterCharacter::StartRunning);
 	PlayerInputComponent->BindAction("Run",IE_Released,this,&AHunterCharacter::StopRunning);
+	
 }
 
 void AHunterCharacter::MoveForward(float Value)
@@ -121,6 +122,7 @@ void AHunterCharacter::LookUp(float Value)
 {
 	AddControllerPitchInput(Value);
 }
+
 
 /*void AHunterCharacter::Jump(float Value)
 {

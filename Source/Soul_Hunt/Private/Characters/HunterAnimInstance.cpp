@@ -5,6 +5,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Characters/HunterCharacter.h"
+#include "DataWrappers/ChaosVDCharacterGroundConstraintDataWrappers.h"
 
 void UHunterAnimInstance::NativeInitializeAnimation()
 {
@@ -29,6 +30,7 @@ void UHunterAnimInstance::NativeUpdateAnimation(float DeltaTime)
 		
 		GroundSpeed= UKismetMathLibrary::VSizeXY(HunterCharacterMovement->Velocity);
 		IsFalling= HunterCharacterMovement->IsFalling();
+		CharacterState= HunterCharacter->GetCharacterState();
 		
 	}
 }

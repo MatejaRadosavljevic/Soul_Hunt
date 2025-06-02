@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
+#include "HunterCharacter.h"
+#include "CharacterTypes.h"
 #include "HunterAnimInstance.generated.h"
 
 /**
@@ -30,6 +32,6 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category= Movement)
 	bool IsFalling;
 
-
+	ECharacterState CharacterState;
 	
 };

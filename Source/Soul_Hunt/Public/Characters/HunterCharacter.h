@@ -4,12 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "CharacterTypes.h"
 #include "HunterCharacter.generated.h"
 
 class USpringArmComponent;
 class UCameraComponent;
 class UGroomComponent;
 class UInputAction;
+
+
+
 
 UCLASS()
 class SOUL_HUNT_API AHunterCharacter : public ACharacter
@@ -24,6 +28,7 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 	
 protected:
 		// Called when the game starts or when spawned
@@ -36,7 +41,7 @@ protected:
 		void Turn(float Value);
 	
 		void LookUp(float Value);
-
+	
 		//void Jump(float Value);
 
 	/**Called for running input*/
@@ -47,7 +52,9 @@ protected:
 	void StopRunning();
 
 private:
-
+	
+	ECharacterState CharacterState=ECharacterState::ECS_Unequipped;
+	
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArm;
 	
@@ -74,4 +81,6 @@ private:
 	/*UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* JumpAction;*/
 
+	public:
+	FORCEINLINE ECharacterState GetCharacterState() const { return CharacterState; }
 };
