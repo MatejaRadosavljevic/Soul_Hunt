@@ -37,7 +37,7 @@ protected:
 
 	FTimerHandle FinishTimerHandle;
 	
-
+	UFUNCTION(BlueprintImplementableEvent)
 	void ShowFinishScreen(); 
 	
 public:	

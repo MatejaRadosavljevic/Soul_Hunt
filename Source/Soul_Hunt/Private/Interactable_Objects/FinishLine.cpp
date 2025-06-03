@@ -21,12 +21,7 @@ AFinishLine::AFinishLine()
 	TriggerBox->SetCollisionProfileName(TEXT("Trigger"));
 	TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &AFinishLine::OnOverlapBegin);
 
-	// Učitaj referencu na widget blueprint iz Content foldera
-	static ConstructorHelpers::FClassFinder<UUserWidget> WidgetClass(TEXT("/Game/UI_Finished.UI_Finished"));
-	if (WidgetClass.Succeeded())
-	{
-		FinishScreenClass = WidgetClass.Class;
-	}
+	
 }
 
 
@@ -47,21 +42,7 @@ void AFinishLine::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, clas
 	}
 }
 
-void AFinishLine::ShowFinishScreen()
-{
-	// Pauziraj igru
-	UGameplayStatics::SetGamePaused(GetWorld(), true);
 
-	// Prikazi UI
-	if (FinishScreenClass)
-	{
-		UUserWidget* FinishWidget = CreateWidget<UUserWidget>(GetWorld(), FinishScreenClass);
-		if (FinishWidget)
-		{
-			FinishWidget->AddToViewport();
-		}
-	}
-}
 
 // Called every frame
 void AFinishLine::Tick(float DeltaTime)
