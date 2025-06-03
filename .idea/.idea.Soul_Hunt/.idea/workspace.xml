@@ -13,10 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b70f421d-d4c2-406e-86ac-b65aafbfb971" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/ABP_Echo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/ABP_Echo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soul_Hunt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/Animations/AM_AttackMontage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/Animations/AM_AttackMontage.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/Animations/Attack_PrimaryA_Montage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/Animations/Attack_PrimaryA_Montage.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/BP_HunterCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Echo/BP_HunterCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Destructibiles/GC_Cube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Destructibiles/GC_Cube.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ParagonGreystone/Characters/Heroes/Greystone/GreystonePlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonGreystone/Characters/Heroes/Greystone/GreystonePlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Valley_Gul/Maps/Valley_Demonstration.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Valley_Gul/Maps/Valley_Demonstration.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +41,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/Characters/HunterAnimInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/InterFaces/HitInterface.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/InterFaces/PickupInterface.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/Items/Item.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Private/Interactable_Objects/Lift.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/Characters/HunterAnimInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/InterFaces/HitInterface.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/InterFaces/PickupInterface.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/Items/Item.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Soul_Hunt/Public/Interactable_Objects/Lift.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../UE_5.5/Engine/Plugins/Editor/EngineAssetDefinitions/Source/Private/AssetDefinition_ActorFoliageSettings.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../UE_5.5/Engine/Source/Runtime/Foliage/Public/FoliageType.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../UE_5.5/Engine/Source/Runtime/Foliage/Public/FoliageType_Actor.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../UE_5.5/Engine/Source/Runtime/Foliage/Public/InstancedFoliageActor.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -206,7 +212,8 @@
       <workItem from="1748893619461" duration="4351000" />
       <workItem from="1748898198325" duration="879000" />
       <workItem from="1748902122698" duration="1910000" />
-      <workItem from="1748950727210" duration="673000" />
+      <workItem from="1748950727210" duration="2171000" />
+      <workItem from="1748964446911" duration="5189000" />
     </task>
     <servers />
   </component>
