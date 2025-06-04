@@ -16,7 +16,7 @@ class SOUL_HUNT_API AFinishLine : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
+	
 	AFinishLine();
 
 protected:

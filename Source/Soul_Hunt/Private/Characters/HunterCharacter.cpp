@@ -8,7 +8,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include"GroomComponent.h"
 
-// Sets default values
+
 AHunterCharacter::AHunterCharacter()
 {
  	
@@ -74,6 +74,8 @@ void AHunterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis(FName("LookUp"),this,&AHunterCharacter::LookUp);
 	
 	PlayerInputComponent->BindAction(FName("Jump"),IE_Pressed,this,&ACharacter::Jump);
+
+	
 	PlayerInputComponent->BindAction("Run",IE_Pressed,this,&AHunterCharacter::StartRunning);
 	PlayerInputComponent->BindAction("Run",IE_Released,this,&AHunterCharacter::StopRunning);
 	

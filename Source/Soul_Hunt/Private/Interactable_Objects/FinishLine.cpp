@@ -37,7 +37,7 @@ void AFinishLine::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, clas
 {
 	if (Cast<ACharacter>(OtherActor))
 	{
-		// Odloži prikaz UI-a za 0.3s
+		
 		GetWorld()->GetTimerManager().SetTimer(FinishTimerHandle, this, &AFinishLine::ShowFinishScreen, 0.3f, false);
 	}
 }

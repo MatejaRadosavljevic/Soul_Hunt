@@ -31,7 +31,7 @@ ALift::ALift()
 	TriggerBox->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 }
 
-// Called when the game starts or when spawned
+
 void ALift::BeginPlay()
 {
 	Super::BeginPlay();
